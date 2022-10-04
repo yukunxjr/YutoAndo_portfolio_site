@@ -1,4 +1,4 @@
-<!-- <script setup>
+<script setup>
 defineProps(['todos']);
 const emit = defineEmits(['remove']);
 const clickRemove = (i) => emit('remove', i);
@@ -12,4 +12,4 @@ const clickRemove = (i) => emit('remove', i);
     </li>
   </ul>
   <p v-else>※TODOを追加してください</p>
-</template> -->
+</template>
