@@ -1,8 +1,10 @@
-<script setup>
-defineProps(['x']);
-</script>
+<script setup></script>
 <template>
-  <header>
-    <h1 v-bind:style="{ color: x }"><slot></slot></h1>
-  </header>
+  <header>myportfolio_site</header>
+  <nav>
+    <router-link to="/">Home</router-link>|
+    <router-link to="/works">Works</router-link>|
+    <router-link to="/timerDemo">Timer</router-link>
+  </nav>
+  <router-view />
 </template>

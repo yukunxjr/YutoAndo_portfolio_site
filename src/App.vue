@@ -3,7 +3,6 @@ import { ref } from 'vue';
 import AppHeader from './components/AppHeader.vue';
 import Works from './components/Works.vue';
 import TodoList from './components/TodoList.vue';
-import Timer from './components/Timer.vue';
 import TimerDemo from './components/TimerDemo.vue';
 
 const todos = ref([]);
@@ -20,12 +19,11 @@ const removeTodo = (i) => {
 </script>
 
 <template>
-  <AppHeader x="red">My Todo</AppHeader>
-  <input type="text" v-model="newTodo" />
+  <AppHeader />
+  <!-- <input type="text" v-model="newTodo" />
   <button @click="add">追加</button>
-  <TodoList :todos="todos" @removeTodo="removeTodo" />
-  <!-- <Timer /> -->
-  <TimerDemo />
+  <TodoList :todos="todos" @removeTodo="removeTodo" /> -->
+  <!-- <TimerDemo /> -->
 </template>
 
 <style scoped></style>
