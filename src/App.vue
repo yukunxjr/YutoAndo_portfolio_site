@@ -4,6 +4,7 @@ import AppHeader from './components/AppHeader.vue';
 import Works from './components/Works.vue';
 import TodoList from './components/TodoList.vue';
 import Timer from './components/Timer.vue';
+import TimerDemo from './components/TimerDemo.vue';
 
 const todos = ref([]);
 const newTodo = ref('');
@@ -23,7 +24,8 @@ const removeTodo = (i) => {
   <input type="text" v-model="newTodo" />
   <button @click="add">追加</button>
   <TodoList :todos="todos" @removeTodo="removeTodo" />
-  <Timer />
+  <!-- <Timer /> -->
+  <TimerDemo />
 </template>
 
 <style scoped></style>
