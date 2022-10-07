@@ -1,29 +1,20 @@
 <script setup>
-import { ref } from 'vue';
 import AppHeader from './components/AppHeader.vue';
-import Works from './components/Works.vue';
-import TodoList from './components/TodoList.vue';
-import TimerDemo from './components/TimerDemo.vue';
-
-const todos = ref([]);
-const newTodo = ref('');
-
-const add = () => {
-  todos.value.push(newTodo.value);
-  newTodo.value = '';
-};
-
-const removeTodo = (i) => {
-  todos.value.splice(i, 1);
-};
+import AppFooter from './components/AppFooter.vue';
 </script>
 
 <template>
-  <AppHeader />
-  <!-- <input type="text" v-model="newTodo" />
-  <button @click="add">追加</button>
-  <TodoList :todos="todos" @removeTodo="removeTodo" /> -->
-  <!-- <TimerDemo /> -->
+  <v-app>
+    <v-main class="pa-0">
+      <AppHeader />
+      <router-view />
+      <AppFooter />
+    </v-main>
+  </v-app>
 </template>
 
-<style scoped></style>
+<style>
+.pa-0 {
+  background: gray;
+}
+</style>

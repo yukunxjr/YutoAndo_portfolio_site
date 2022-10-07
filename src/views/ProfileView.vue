@@ -1,0 +1,21 @@
+<template>
+  <v-main>
+    <v-container>
+      <v-sheet
+        color="white"
+        elevation="1"
+        height="80vh"
+        width="85vw"
+        rounded
+        class="profile_sheet"
+      >
+        <div>profile画像</div>
+        <div>経歴</div>
+        <div>趣味・特技</div>
+        <div>プログラミング経験</div>
+      </v-sheet>
+    </v-container>
+  </v-main>
+</template>
+
+<style></style>

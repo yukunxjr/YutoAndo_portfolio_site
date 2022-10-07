@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
-// import Profile from '../components/Profile.vue';
-import Home from '../components/Home.vue';
-import Works from '../components/Works.vue';
+import Profile from '../views/ProfileView.vue';
+import Home from '../views/HomeView.vue';
+import Works from '../views/WorkView.vue';
 import Timer from '../components/TimerDemo.vue';
 
 const routes = [
@@ -9,6 +9,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
+  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    component: Profile,
   },
   {
     path: '/works',

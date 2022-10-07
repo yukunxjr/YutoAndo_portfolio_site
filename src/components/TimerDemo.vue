@@ -13,6 +13,7 @@ const count = () => {
     sec.value = 59;
   } else if (hour.value <= 0 && sec.value <= 0 && min.value <= 0) {
     complete();
+    timerOn.value = false;
   } else {
     if (sec.value <= 0 && min.value >= 1) {
       min.value--;
