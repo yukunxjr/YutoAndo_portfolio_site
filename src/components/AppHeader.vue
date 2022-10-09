@@ -22,5 +22,7 @@
 <style>
 .btn {
   color: #fff;
+  font-family: 'Caveat';
+  font-size: large;
 }
 </style>
